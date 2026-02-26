@@ -3,12 +3,12 @@
   
   # 🚀 SupunFernando Baileys
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6b6b,40:f06595,100:845ef7&text=baileyz+by+mr+supun+fernando&fontAlignY=40&fontSize=44&fontColor=ffffff&desc=Stable%20WhatsApp%20Web%20API%20Fork%20for%20Production%20Bots&descAlignY=60&descSize=16" alt="Header Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6b6b,40:f06595,100:845ef7&text=bailey+by+mr+supun+fernando&fontAlignY=40&fontSize=44&fontColor=ffffff&desc=Stable%20WhatsApp%20Web%20API%20Fork%20for%20Production%20Bots&descAlignY=60&descSize=16" alt="Header Banner" />
 
-  [![NPM Version](https://img.shields.io/npm/v/mr-supun-fernando/baileyz?color=success&logo=npm)](https://www.npmjs.com/package/mr-supun-fernando/baileyz)
-  [![Downloads](https://img.shields.io/npm/dt/mr-supun-fernando/baileyz?color=blue&logo=npm)](https://www.npmjs.com/package/mr-supun-fernando/baileyz)
+  [![NPM Version](https://img.shields.io/npm/v/mr-supun-fernando/supun-baileyz?color=success&logo=npm)](https://www.npmjs.com/package/mr-supun-fernando/supun-baileyz)
+  [![Downloads](https://img.shields.io/npm/dt/mr-supun-fernando/supun-baileyz?color=blue&logo=npm)](https://www.npmjs.com/package/mr-supun-fernando/supun-baileyz)
   [![License](https://img.shields.io/github/license/Supunfernando16/baileys?color=yellow)](./LICENSE)
-  [![Node Version](https://img.shields.io/node/v/mr-supun-fernando/baileyz)](https://nodejs.org)
+  [![Node Version](https://img.shields.io/node/v/mr-supun-fernando/supun-baileyz)](https://nodejs.org)
   
   *Modern, feature-rich, and developer-friendly WhatsApp automation library*
 
@@ -77,12 +77,12 @@
 
 ### NPM
 ```bash
-npm install baileyz
+npm install supun-baileyz
 ```
 
 ### Yarn
 ```bash
-yarn add baileyz
+yarn add supun-baileyz
 ```
 
 ### Using Different Package Name
@@ -90,7 +90,7 @@ Add to your `package.json`:
 ```json
 {
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:baileyz"
+    "@whiskeysockets/baileys": "npm:supun-baileyz"
   }
 }
 ```
@@ -98,17 +98,17 @@ Add to your `package.json`:
 ### Import
 ```javascript
 // ESM
-import makeWASocket from 'baileyz'
+import makeWASocket from 'supun-baileyz'
 
 // CommonJS
-const { default: makeWASocket } = require('baileyz')
+const { default: makeWASocket } = require('supun-baileyz')
 ```
 
 ---
 
 ## 🔌 Quick Start
 ```javascript
-import makeWASocket, { DisconnectReason, useMultiFileAuthState } from 'baileyz'
+import makeWASocket, { DisconnectReason, useMultiFileAuthState } from 'supun-baileyz'
 
 async function connectToWhatsApp() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_session')
@@ -153,7 +153,7 @@ connectToWhatsApp()
 
 ### QR Code Authentication
 ```javascript
-import makeWASocket from 'baileyz'
+import makeWASocket from 'supun-baileyz'
 
 const sock = makeWASocket({
     auth: state,
@@ -221,7 +221,7 @@ const sock = makeWASocket({
 
 Avoid scanning QR every time:
 ```javascript
-import makeWASocket, { useMultiFileAuthState } from 'baileyz'
+import makeWASocket, { useMultiFileAuthState } from 'supun-baileyz'
 
 const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys')
 const sock = makeWASocket({ auth: state })
@@ -288,7 +288,7 @@ sock.ev.on('messages.update', async (event) => {
 
 ## 🛠️ Data Store
 ```javascript
-import makeWASocket, { makeInMemoryStore } from 'baileyz'
+import makeWASocket, { makeInMemoryStore } from 'supun-baileyz'
 
 const store = makeInMemoryStore({})
 store.readFromFile('./baileys_store.json')
@@ -1149,7 +1149,7 @@ await sock.sendMessage(jid, {
 
 ### Download Media
 ```javascript
-import { downloadMediaMessage, getContentType } from 'baileyz'
+import { downloadMediaMessage, getContentType } from 'supun-baileyz'
 
 sock.ev.on('messages.upsert', async ({ messages }) => {
     const msg = messages[0]
