@@ -1149,7 +1149,7 @@ await sock.sendMessage(jid, {
 
 ### Download Media
 ```javascript
-import { downloadMediaMessage, getContentType } from '@mr-supun-fernando/baileyz'
+import { downloadMediaMessage, getContentType } from 'mr-supun-fernando/baileyz'
 
 sock.ev.on('messages.upsert', async ({ messages }) => {
     const msg = messages[0]
@@ -1618,71 +1618,6 @@ async function processQueue() {
 }
 ```
 
----
-
-## 📝 Important Notes
-
-### WhatsApp ID Formats
-- **Personal**: `[country_code][phone_number]@s.whatsapp.net`
-- **Group**: `[group_id]@g.us`
-- **Broadcast**: `[timestamp]@broadcast`
-- **Status**: `status@broadcast`
-- **Newsletter**: `[newsletter_id]@newsletter`
-
-### Message Types
-All supported message types:
-- `conversation` - Text
-- `imageMessage` - Image
-- `videoMessage` - Video
-- `audioMessage` - Audio
-- `documentMessage` - Document
-- `stickerMessage` - Sticker
-- `locationMessage` - Location
-- `contactMessage` - Contact
-- `pollCreationMessage` - Poll
-- `reactionMessage` - Reaction
-- `editedMessage` - Edited message
-- `viewOnceMessage` - View once media
-- `extendedTextMessage` - Text with link preview
-
-### Events Reference
-```javascript
-// Connection events
-'connection.update'
-'creds.update'
-
-// Message events
-'messages.upsert'
-'messages.update'
-'messages.delete'
-'message-receipt.update'
-
-// Chat events
-'chats.set'
-'chats.upsert'
-'chats.update'
-'chats.delete'
-
-// Contact events
-'contacts.set'
-'contacts.upsert'
-'contacts.update'
-
-// Group events
-'groups.upsert'
-'groups.update'
-'group-participants.update'
-
-// Presence events
-'presence.update'
-
-// Call events
-'call'
-
-// Blocklist events
-'blocklist.set'
-'blocklist.update'
-```
 ---
 
 ## 📄 License
