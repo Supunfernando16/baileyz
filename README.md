@@ -3,7 +3,7 @@
   
   # 🚀 SupunFernando Baileys
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6b6b,40:f06595,100:845ef7&text=baileyz by mr.supun fernando&fontAlignY=40&fontSize=44&fontColor=ffffff&desc=Stable%20WhatsApp%20Web%20API%20Fork%20for%20Production%20Bots&descAlignY=60&descSize=16" alt="Header Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6b6b,40:f06595,100:845ef7&text=baileyz+by+mr+supun+fernando&fontAlignY=40&fontSize=44&fontColor=ffffff&desc=Stable%20WhatsApp%20Web%20API%20Fork%20for%20Production%20Bots&descAlignY=60&descSize=16" alt="Header Banner" />
 
   [![NPM Version](https://img.shields.io/npm/v/mr-supun-fernando/baileyz?color=success&logo=npm)](https://www.npmjs.com/package/mr-supun-fernando/baileyz)
   [![Downloads](https://img.shields.io/npm/dt/mr-supun-fernando/baileyz?color=blue&logo=npm)](https://www.npmjs.com/package/mr-supun-fernando/baileyz)
