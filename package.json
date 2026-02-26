@@ -1,5 +1,5 @@
 {
-    "name": "baileyz",
+    "name": "supun-baileyz",
     "version": "1.0.1",
     "description": "WhatsApp API Modification By Dark Shadow Modz",
   "keywords": [
@@ -21,7 +21,7 @@
   ],
     "homepage": "https://www.npmjs.com/package/mr-supun-fernando",
     "repository": {
-        "url": "https://www.npmjs.com/package/mr-supun-fernando/baileyz"
+        "url": "https://www.npmjs.com/package/mr-supun-fernando/supun-baileyz"
     },
     "license": "MIT",
     "author": "Supun Fernando",
